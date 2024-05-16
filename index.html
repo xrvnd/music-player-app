@@ -5,16 +5,537 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Static Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
   </head>
 
   <body>
-    <h1>Welcome Ninja!!</h1>
-    <h3>Write your code here!</h3>
-    <h3>A CSS and JS file has been created and linked for you already.</h3>
-    <h3>Feel free to change the directory structure to your liking.</h3>
-    <h3>Do not delete any .json file from CodeSandbox</h3>
-  </body>
 
-  <script src="script.js"></script>
-</html>
+     <!-- header section -->
+
+    <header class="nav-bar">
+      <div class="title-combo">
+          <div class="logo">
+              <i class="fas fa-3x fa-ankh" alt="logo"></i>
+          </div>
+
+          <div class="web-name text-hover">
+              <h2>Music</h2>
+              <h4>Player</h4>
+          </div>
+      </div>
+
+      <div class="fav">
+          <a href="#">
+              <h2 class="text-hover">Favourites</h2>
+          </a>
+      </div>
+
+      <div class="search-box">
+          <form action="">
+              <button id="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <input type="text" placeholder="Search.." name="search" id="search">
+              <button id="mic" type="submit"><i class="fas fa-microphone"></i></button>
+          </form>
+      </div>
+
+      <div class="">
+          <i class="fa-solid fa-2x fa-bell"></i>
+      </div>
+
+      <div class="">
+          <i class="fas fa-2x fa-user-circle"></i>
+      </div>
+  
+    </header>
+
+  <!-- main section -->
+
+
+  <main>
+    <aside class="aside section-1">
+
+        <!-- banner Section -->
+
+        <section class="container">
+            <div class="box">
+                <img src="images/banners/b1.jpeg" alt="Banner-1">
+            </div>
+            <div class="box" style="z-index: 1;">
+                <img src="images/banners/b2.jpeg" alt="Banner-3">
+            </div>
+            <div class="box">
+                <img src="images/banners/b3.jpeg" alt="Banner-2">
+            </div>
+        </section>
+
+        <!-- latest releases -->
+
+        <section class="latest-releases">
+            <h1 class="heading-text">Latest Releases</h1>
+
+            <div class="card">
+                <figure>
+                    <a href="playlist-screen.html">
+                        <img src="images/song-image/starboy-s1.jpeg" alt="starboy">
+                    </a>
+                    
+                   <figcaption class="song-info">
+                        <h2>Starboy</h2>
+                        <p>NOV 25, 2016</p>
+                   </figcaption>
+                </figure>
+
+                <div class="options">
+                    <input type="checkbox" id="toggle-btn" hidden>
+                    <label><i class="fa-solid fa-ellipsis"></i></label>
+                    <p>4:44</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <a href="playlist-screen.html">
+                        <img src="images/song-image/nizzas-s2.jpeg" alt="paris"> 
+                    </a>
+                    <figcaption class="song-info">
+                        <h2>Ni**as In Paris</h2>
+                        <p>SEP 13, 2011</p>
+                    </figcaption>
+                 </figure>
+                <div class="options">
+                    <input type="checkbox" name="" id="" hidden>
+                    <label><i class="fa-solid fa-ellipsis"></i></label>
+                    <p>4:44</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <a href="playlist-screen.html">
+                       <img src="images/song-image/aero-s3.jpeg" alt="aero">  
+                    </a>
+                    
+                    <figcaption class="song-info">
+                        <h2>Dream On</h2>
+                        <p>JUN 27, 1973</p>
+                    </figcaption>
+                 </figure>
+                <div class="options">
+                    <input type="checkbox" name="" id="" hidden>
+                    <label><i class="fa-solid fa-ellipsis"></i></label>
+                    <p>4:44</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <a href="playlist-screen.html">
+                        <img src="images/song-image/295-s4.jpeg" alt="siddhu"> 
+                    </a>
+                    
+                    <figcaption class="song-info">
+                        <h2>295</h2>
+                        <p>JUL 14, 2021</p>
+                    </figcaption>
+                 </figure>
+                <div class="options">
+                    <input type="checkbox" name="" id="" hidden>
+                    <label><i class="fa-solid fa-ellipsis"></i></label>
+                    <p>4:44</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- popular artists -->
+
+        <section class="popular-artists">
+            <h1 class="heading-text">Popular Artists</h1>
+            <div class="popular-artist-content">
+                <figure>
+                    <a href="playlist-screen.html">
+                        <img src="images/artists/weeknd-a1.jpeg" alt="weeknd">
+                        <figcaption>The Weeknd</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="playlist-screen.html">
+                        <img src="images/artists/kanye-a2.jpeg" alt="kanye-swift">
+                        <figcaption>Kanye West</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="playlist-screen.html">
+                        <img src="images/artists/shubh-a3.jpeg" alt="shubh">
+                        <figcaption>Shubh</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="playlist-screen.html">
+                        <img src="images/artists/eminem-a4.jpeg" alt="em">
+                        <figcaption>Eminem</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="playlist-screen.html">
+                        <img src="images/artists/acdc-a5.jpeg" alt="ac/dc">
+                        <figcaption>AC / DC</figcaption>
+                    </a>
+                </figure>
+
+                
+            </div>
+
+        </section>
+
+         <!-- music station -->
+
+         <section class="music-station">
+             <figure id="mus-sta-fig">
+                 <img src="images/other/music-station.jpg">
+             </figure>
+             <div class="music-mood">
+                <figure><a href=""><img src="images/stations/chill-st1.jpg" alt=""><p>Chill</p></a></figure>
+                <figure><a href=""><img src="images/stations/electronic-st2.jpg" alt=""><p>EDM</p></a></figure>
+                <figure><a href=""><img src="images/stations/love-st3.jpg" alt=""><p>Love</p></a></figure>
+                <figure><a href=""><img src="images/stations/party-st4.jpg" alt=""><p>Party</p></a></figure>
+                <figure><a href=""><img src="images/stations/pop-st5.jpg" alt=""><p>Pop</p></a></figure>
+                <figure><a href=""><img src="images/stations/retro-st6.jpg" alt=""><p>Retro</p></a></figure>
+             </div>
+         </section>
+
+         <!-- bigger music station -->
+
+         <section class="b-music-station">
+            <figure>
+                <a href="">
+                   <img src="images/stations/party-st4.jpg">
+                   <p>Party</p> 
+                </a>
+            </figure>
+            <figure>
+                <a href="">
+                    <img src="images/stations/electronic-st2.jpg">
+                    <p>EDM</p>
+                </a>
+            </figure>
+            <figure>
+                <a href="">
+                   <img src="images/stations/road-trip-st7.jpg">
+                   <p>Road Trip</p> 
+                </a>
+                
+            </figure>
+        </section>
+
+        <!-- latest english -->
+
+        <section class="latest-songs" id="latest-english">
+            <h1 class="heading-text">Latest English</h1>
+            <div class="latest-song-div">
+                <figure>
+                    <a href="">
+                        <img src="images/song-image/starboy-s1.jpeg" alt="">
+                        <figcaption class="">
+                            <h5>Starboy</h5>
+                            <h6>NOV 25, 2016</h6>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <img src="images/song-image/aero-s3.jpeg" alt="">
+                        <figcaption class="">
+                            <h5>Dream on</h5>
+                            <h6>JUN 27, 1973</h6>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <img src="images/song-image/nizzas-s2.jpeg" alt="">
+                        <figcaption class="">
+                            <h5>Ni**as In Paris</h5>
+                            <h6>SEP 13, 2011</h6>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <img src="images/song-image/colour-violet-s6.jpeg" alt="">
+                        <figcaption class="">
+                            <h5>The colour violet</h5>
+                            <h6>DEC 10, 2021</h6>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <img src="images/song-image/praise-s7.jpeg" alt="">
+                        <figcaption class="">
+                            <h5>Prasie the lord</h5>
+                            <h6>JUN 16, 2018</h6>
+                        </figcaption>
+                    </a>
+                </figure>
+
+                
+            </div>
+
+        </section>
+
+        <!-- latest hindi -->
+
+        <section class="latest-songs" id="latest-hindi">
+            <h1 class="heading-text">Latest Hindi</h1>
+            <div class="latest-song-div">
+                <figure>
+                    <a href="">
+                        <img src="images/song-image/kaaley-s8.jpeg" alt="">
+                        <figcaption class="">
+                            <h5>Kaaley sheeshe</h5>
+                            <h6>AUG 2, 2023</h6>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <img src="images/song-image/same-beef-s10.jpeg" alt="">
+                        <figcaption class="">
+                            <h5>Same Beef</h5>
+                            <h6>AUG 2, 2022</h6>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <img src="images/song-image/still-roll-s9.jpeg" alt="">
+                        <figcaption class="">
+                            <h5>Still Rollin'</h5>
+                            <h6>SEP 11, 2022</h6>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <img src="images/song-image/murder-s11.jpeg" alt="">
+                        <figcaption class="">
+                            <h5>Murder</h5>
+                            <h6>DEC 21, 2023</h6>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <img src="images/song-image/295-s4.jpeg" alt="">
+                        <figcaption class="">
+                            <h5>295</h5>
+                            <h6>AUG 2, 2020</h6>
+                        </figcaption>
+                    </a>
+                </figure>
+            </div>
+        </section>
+    </aside>
+
+    <!-- playList side bar -->
+
+    <aside class="aside section-2">
+       <h1 class="heading-text inline">Playlist</h1>
+       <h3 class="inline right">Queue</h3>
+
+       <div class="playlist">
+           <div class="playlist-item">
+                <div class="playlist-content">
+                    <div class="content-left">
+                        <div style="margin-right: 4px;"><h2>01</h2></div>
+                        <div class="coverer">
+                            <img class="small-img inline-block" src="images/song-image/colour-violet-s6.jpeg" alt=""> 
+                        </div>
+                        <div>
+                            <div>The Color violet</div>
+                            <p>Tory Lanez</p>
+                        </div> 
+                    </div>
+                    
+                    <div class="content-right">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+           </div>
+
+           <div class="playlist-item">
+                <div class="playlist-content">
+                    <div class="content-left">
+                        <div style="margin-right: 4px;"><h2>02</h2></div>
+                        <div class="coverer">
+                            <img class="small-img inline-block" src="images/song-image/295-s4.jpeg" alt=""> 
+                        </div>
+                        <div>
+                            <div>295</div>
+                            <p>Siddhu Moosewala</p>
+                        </div> 
+                    </div>
+                    
+                    <div class="content-right">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+           </div>
+
+           <div class="playlist-item">
+                <div class="playlist-content">
+                    <div class="content-left">
+                        <div style="margin-right: 4px;"><h2>03</h2></div>
+                        <div class="coverer">
+                            <img class="small-img inline-block" src="images/song-image/starboy-s1.jpeg" alt=""> 
+                        </div>
+                        <div>
+                            <div>Starboy</div>
+                            <p>The Weeknd</p>
+                        </div> 
+                    </div>
+                    
+                    <div class="content-right">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+           </div>
+
+           <div class="playlist-item">
+                <div class="playlist-content">
+                    <div class="content-left">
+                        <div style="margin-right: 4px;"><h2>04</h2></div>
+                        <div class="coverer">
+                            <img class="small-img inline-block" src="images/song-image/praise-s7.jpeg" alt=""> 
+                        </div>
+                        <div>
+                            <div>Praise the lord</div>
+                            <p>A$AP Rocky</p>
+                        </div> 
+                    </div>
+                    
+                    <div class="content-right">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+           </div>
+
+           <div class="playlist-item">
+                <div class="playlist-content">
+                    <div class="content-left">
+                        <div style="margin-right: 4px;"><h2>05</h2></div>
+                        <div class="coverer">
+                            <img class="small-img inline-block" src="images/song-image/murder-s11.jpeg" alt=""> 
+                        </div>
+                        <div>
+                            <div>Murder</div>
+                            <p>Real Boss</p>
+                        </div> 
+                    </div>
+                    
+                    <div class="content-right">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+           </div>
+
+           <div class="playlist-item">
+                <div class="playlist-content">
+                    <div class="content-left">
+                        <div style="margin-right: 4px;"><h2>06</h2></div>
+                        <div class="coverer">
+                            <img class="small-img inline-block" src="images/song-image/still-roll-s9.jpeg" alt=""> 
+                        </div>
+                        <div>
+                            <div>Still Rollin'</div>
+                            <p>Shubh</p>
+                        </div> 
+                    </div>
+                    
+                    <div class="content-right">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+           </div>
+
+           <div class="playlist-item">
+                <div class="playlist-content">
+                    <div class="content-left">
+                        <div style="margin-right: 4px;"><h2>07</h2></div>
+                        <div class="coverer">
+                            <img class="small-img inline-block" src="images/song-image/nizzas-s2.jpeg" alt=""> 
+                        </div>
+                        <div>
+                            <div>Ni**as in Paris</div>
+                            <p>Jay-Z</p>
+                        </div> 
+                    </div>
+                    
+                    <div class="content-right">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+           </div>
+
+           <div class="playlist-item">
+                <div class="playlist-content">
+                    <div class="content-left">
+                        <div style="margin-right: 4px;"><h2>08</h2></div>
+                        <div class="coverer">
+                            <img class="small-img inline-block" src="images/song-image/colour-violet-s6.jpeg" alt=""> 
+                        </div>
+                        <div>
+                            <div>The Color Violet</div>
+                            <p>Tory Lanez</p>
+                        </div> 
+                    </div>
+                    
+                    <div class="content-right">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+           </div>
+
+           <div class="playlist-item">
+                <div class="playlist-content">
+                    <div class="content-left">
+                        <div style="margin-right: 4px;"><h2>09</h2></div>
+                        <div class="coverer">
+                            <img class="small-img inline-block" src="images/song-image/starboy-s1.jpeg" alt=""> 
+                        </div>
+                        <div>
+                            <div>Starboy</div>
+                            <p>The Weeknd</p>
+                        </div> 
+                    </div>
+                    
+                    <div class="content-right">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+           </div>
+
+           <div class="playlist-item">
+                <div class="playlist-content">
+                    <div class="content-left">
+                        <div style="margin-right: 4px;"><h2>10</h2></div>
+                        <div class="coverer">
+                            <img class="small-img inline-block" src="images/song-image/295-s4.jpeg" alt=""> 
+                        </div>
+                        <div>
+                            <div>295</div>
+                            <p>Sidhu Moosewala</p>
+                        </div> 
+                    </div>
+                    
+                    <div class="content-right">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+           </div>
+
+       </div>
+    </aside>
+</main>
